@@ -1,14 +1,15 @@
 require 'nokogiri'
-require 'httparty'
 require 'byebug'
 require 'colorize'
+require 'open-uri'
 
 def scraper
   url = "https://www.careerbeacon.com/en/search"
-  unparsed_pg = HTTParty.get(url) #raw html
-  parsed_pg = Nokogiri::HTML(unparsed_pg) #parse html
+  document = open(url)
+  raw_html = document.read #raw html
+  parsed_html = Nokogiri::HTML(raw_html) #parse html
   # parse all the jobs listed
-  jobs_list = parsed_pg.css('tr.full_width') #the job enteries in the page
+  jobs_list = parsed_html.css('tr.full_width') #the job enteries in the page
   # parsing jobjs into hashes
   jobs = []
   jobs_list.each do |entry|
