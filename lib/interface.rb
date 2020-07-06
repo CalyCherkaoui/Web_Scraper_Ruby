@@ -30,5 +30,3 @@ class Interface
   end
 
 end
-
-
