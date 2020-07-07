@@ -4,7 +4,8 @@ require 'colorize'
 require 'open-uri'
 
 def scraper
-  url = "https://www.careerbeacon.com/en/search"
+  # url = "https://www.careerbeacon.com/en/search"
+  url = "https://www.indeed.com/jobs?q=developer+remote&l="
   document = open(url)
   raw_html = document.read #raw html
   parsed_html = Nokogiri::HTML(raw_html) #parse html
