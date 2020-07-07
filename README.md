@@ -15,7 +15,11 @@ This is a web scraper for It jobs offers web page.
     └── scraper_spec.rb
     └── spec_helper.rb
 ```
+## Get start
 
+[x] Clone this repository
+[] Install the gems by runing in command line `` bundle install ``
+[] In the terminal run `` ruby main.rb ``
 
 ## Built With
 
