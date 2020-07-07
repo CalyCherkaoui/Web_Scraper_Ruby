@@ -1,6 +1,22 @@
 # Job offers Scraper
 This is a web scraper for It jobs offers web page.
 
+## Project Structure
+"
+├── README.md
+├── bin
+│   └── main.rb
+└── lib
+    └── interface.rb
+    └── output.rb
+    └── page.rb
+    └── scraper.rb
+└── rspec
+    └── scraper_spec.rb
+    └── spec_helper.rb
+"
+
+
 ## Built With
 
 - Ruby 2.6.5p114
