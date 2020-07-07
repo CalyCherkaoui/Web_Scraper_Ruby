@@ -1,8 +1,8 @@
 class Interface
-  attr_accessor :name, :date
-  def initilize(name = '', date)
+  attr_accessor :name
+
+  def initialize(name = '')
     @name = name
-    @date = date
   end
 
   def authentify_msg
@@ -10,14 +10,18 @@ class Interface
   end
 
   def welcome_msg
-  '
-#########################################
-###   Welcome to Job web scrapping    ###
-#########################################
-'
+    "
+#############################################
+###                                       ###
+###      Scraping Job offers data         ###
+###      from Indeed.com web page         ###
+###                                       ###
+###                                       ###
+#############################################
+"
   end
 
-  def chose_options_msg
+  def chose_option_msg
     "
  ---------------------------------------
 |  Chose an option for scrapping:       |
@@ -28,5 +32,4 @@ class Interface
  ---------------------------------------
     "
   end
-
 end
