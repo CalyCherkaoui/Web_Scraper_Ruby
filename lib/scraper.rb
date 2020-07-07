@@ -12,13 +12,13 @@ class Scraper
 
   def job(entry)
     job = {
-      title: entry.css().text,
-      location: entry.css().text,
-      date_publication: entry.css().text,
-      company: entry.css().text,
-      salary: entry.css().text,
-      summary: entry.css().text,
-      url: entry.css().text
+      title: entry.css('h2.title').text,
+      # location: entry.css().text,
+      # date_publication: entry.css().text,
+      # company: entry.css().text,
+      # salary: entry.css().text,
+      # summary: entry.css().text,
+      # url: entry.css().text
     }
   end
 
@@ -36,5 +36,6 @@ end
  
 pg = Page.new("https://www.indeed.com/jobs?q=developer+remote&l=")
 x = Scraper.new(pg)
-y = x.all_offers
+y = x.job_listing
 p y.count
+p y[0]
