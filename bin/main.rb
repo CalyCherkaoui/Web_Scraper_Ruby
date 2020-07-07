@@ -2,6 +2,7 @@ require 'nokogiri'
 require 'byebug'
 require 'colorize'
 require 'open-uri'
+require 'csv'
 
 def scraper
   url = "https://www.careerbeacon.com/en/search"

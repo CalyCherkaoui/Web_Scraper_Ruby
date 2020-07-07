@@ -17,7 +17,7 @@ class Scraper
       date_publication: string_filter(entry.css('span.date').text),
       company: string_filter(entry.css('.company').text),
       summary: string_filter(entry.css('div.summary').text),
-      url: entry.css('a.jobtitle')[0].attributes['href'].value
+      url: "https://www.indeed.com#{entry.css('a.jobtitle')[0].attributes['href'].value}"
     }
   end
   def string_filter(my_string)
@@ -31,7 +31,7 @@ class Scraper
     end
   end
   public
-  def job_listing
+  def job_list
     jobs = []
     job_offers = @page.css('div.jobsearch-SerpJobCard')
     job_offers.each do |entry|
@@ -45,7 +45,7 @@ end
  
 pg = Page.new("https://www.indeed.com/jobs?q=developer+remote&l=")
 x = Scraper.new(pg)
-y = x.job_listing
+y = x.job_list
 p y.count
 z = y[0][:title]
 p z
