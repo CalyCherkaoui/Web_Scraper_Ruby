@@ -3,9 +3,9 @@ module Output
     filepath = '../Exported_files/job_offers.csv'
     csv_option = { headers: :first_row, col_sep: ',' }
     CSV.open(filepath, 'wb', csv_option) do |csv|
-      csv << ['Title', 'Location', 'Pubication date', 'Link']
+      csv << ['Title', 'Location', 'Pubication date', 'Link', 'Summary']
       jobs_list.each do |elem|
-        csv << [elem[:title], elem[:location], elem[:date_publication], elem[:url]]
+        csv << [elem[:title], elem[:location], elem[:date_publication], elem[:url], elem[:summary]]
       end
     end
   end
@@ -14,11 +14,11 @@ module Output
     filepath = '../Exported_files/job_offers.txt'
     txt_file = File.open(filepath, 'w')
     header = '
-******************************************************
-
-    Scraped Job offers from indeed.com web page
-
-******************************************************
+*****************************************************************************************************
+*                                                                                                   *
+*                      Scraped Job offers from indeed.com web page                                  *
+*                                                                                                   *
+*****************************************************************************************************
 '
     txt_file.write(header)
     i = 0
@@ -32,11 +32,12 @@ module Output
   def display_it(index)
     "
 ----------------------------------------------------------------------------------------------------
-                      #{jobs_list[index][:title]}
+                            #{jobs_list[index][:title]}
 ----------------------------------------------------------------------------------------------------
 Location            : #{jobs_list[index][:location]}
 Date of publication : #{jobs_list[index][:date_publication]}
 Link to the offer   : #{jobs_list[index][:url]}
+Brief summary       : #{jobs_list[index][:summary]}
 
 "
   end

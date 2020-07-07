@@ -5,7 +5,7 @@ class Page
   end
 
   def read_html
-    document = open(@url)
+    document = URI.parse(@url).open
     @raw_html = document.read # raw html
     @raw_html
   end
