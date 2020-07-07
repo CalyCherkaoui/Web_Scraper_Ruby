@@ -1,23 +1,18 @@
 require 'csv'
 module Output
-
   def make_cvs
     filepath = "job_offers.csv"
     csv_option = {headers: :first_row, col_sep: ','}
     CSV.open(filepath, 'wb', csv_option) do |csv|
-      csv << ['title']
+      csv << ['Title', 'Location', 'Pubication date', 'Link']
       self.jobs_list.each do |elem|
-        csv << [elem]
+        csv << [elem[:title], elem[:location], elem[:date_publication], elem[:url]]
       end
     end
   end
 
-  def make_JSON
-  
-  end
-
   def make_txt
-    filepath = "test.txt"
+    filepath = "job_offers.txt"
     txt_file = File.open(filepath, 'w')
     header = '
 ******************************************************

@@ -5,6 +5,7 @@ require 'colorize'
 require 'open-uri'
 
 class Scraper
+  include 'output'
   attr_accessor :page
   def initialize(page)
     @page = Nokogiri::HTML(page.get_html) #parse html
