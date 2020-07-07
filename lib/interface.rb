@@ -37,9 +37,9 @@ class Interface
     if option == 1
       "#{@name.capitalize} ! The Scraped Job offers will be displayed here in your terminal"
     elsif option == 2
-      "#{@name.capitalize}! you can download the CSV exported file in this folder ../Exported_files/"
-    elsif opption == 3
-      "#{@name.capitalize}! you can download the text exported file in this folder ../Exported_files/"
+      "#{@name.capitalize}! you can download the CSV exported file in the root folder"
+    elsif option == 3
+      "#{@name.capitalize}! you can download the text exported file in the root folder"
     else
       'Wrong option try again'
     end

@@ -1,6 +1,6 @@
 module Output
   def make_csv
-    filepath = '../Exported_files/job_offers.csv'
+    filepath = '../job_offers.csv'
     csv_option = { headers: :first_row, col_sep: ',' }
     CSV.open(filepath, 'wb', csv_option) do |csv|
       csv << ['Title', 'Location', 'Pubication date', 'Link', 'Summary']
@@ -11,7 +11,7 @@ module Output
   end
 
   def make_txt
-    filepath = '../Exported_files/job_offers.txt'
+    filepath = '../job_offers.txt'
     txt_file = File.open(filepath, 'w')
     header = '
 *****************************************************************************************************
