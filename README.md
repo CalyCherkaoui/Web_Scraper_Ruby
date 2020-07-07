@@ -2,7 +2,7 @@
 This is a web scraper for It jobs offers web page.
 
 ## Project Structure
-"
+``
 ├── README.md
 ├── bin
 │   └── main.rb
@@ -14,7 +14,7 @@ This is a web scraper for It jobs offers web page.
 └── rspec
     └── scraper_spec.rb
     └── spec_helper.rb
-"
+``
 
 
 ## Built With
