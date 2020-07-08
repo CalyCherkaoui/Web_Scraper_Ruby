@@ -3,9 +3,9 @@ This is a web scraper for jobs offers web site <https://www.indeed.com> .
 
 # About the project
 
-* The programme is implementing a scraper for search results of a Job offer website
-* The scraper allow you to:
-- - Search by key words in <https://www.indeed.com>
+* The program is implementing a scraper for search results of a Job offer website
+* This scraper helps you to:
+- - Search by key words in <https://www.indeed.com> web page
 - - Scrape the results of the search
 - - Display the scraped data in terminal or to export them into a CSV or a Text files
 
