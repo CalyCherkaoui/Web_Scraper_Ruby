@@ -1,10 +1,27 @@
 # Job offers Scraper
-This is a web scraper for It jobs offers web page.
+This is a web scraper for jobs offers web site <https://www.indeed.com> .
 
 # About the project
 
 * The programme is implementing a scraper for search results of a Job offer website
-* The scraper allow you to display the scraped data in terminal of to export them into a CSV or a Text files
+* The scraper allow you to:
+- - Search by key words in <https://www.indeed.com>
+- - Scrape the results of the search
+- - Display the scraped data in terminal or to export them into a CSV or a Text files
+
+# Preview
+
+![screenshot](./screen_shots/ScreenshotScraper.png)
+
+## Built With
+
+- Programming langage : Ruby
+- Editor : VSCode
+- Linter : Rubocop
+
+## Code testing
+
+- Tool : Rspec
 
 ## Learning objectives
 
@@ -14,6 +31,7 @@ This is a web scraper for It jobs offers web page.
 
 ## Project Structure
 ```
+├── LICENCE
 ├── README.md
 ├── bin
 │   └── main.rb
@@ -22,8 +40,12 @@ This is a web scraper for It jobs offers web page.
     └── output.rb
     └── page.rb
     └── scraper.rb
+    └── url.rb
 └── rspec
+    └── interface_spec.rb
+    └── page_spec.rb
     └── scraper_spec.rb
+    └── url_spec.rb
     └── spec_helper.rb
 ```
 ## Get started
@@ -33,16 +55,6 @@ This is a web scraper for It jobs offers web page.
 * Install the gems by runing the command line `` bundle install ``
 * In the terminal run `` ruby bin/main.rb ``
 * If you chose to export the outputs , you will find the csv and txt files in the project repository
-
-## Built With
-
-- Ruby 2.6.5p114
-- VSCode
-- Linter : Rubocop
-
-## Code testing
-
-- Tool : Rspec
 
 ## Author
 
