@@ -28,7 +28,6 @@ class Interface
                            Display on terminal, enter => 1
                            Download CSV file, enter   => 2
                            Download txt file, enter   => 3
-                           Download JSON file, enter  => 4
                    ------------------------------------------
 "
   end
