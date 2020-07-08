@@ -31,6 +31,10 @@ class Interface
 "
   end
 
+  def no_result_found_msg
+    "Sorry #{@name} !No result found with these key words. Try again with new Key words "
+  end
+
   def chose_option_msg
     "
 ------------------------------------------------------------------------------------------------

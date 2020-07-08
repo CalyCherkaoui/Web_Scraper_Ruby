@@ -4,7 +4,7 @@ class Scraper
   attr_accessor :page
 
   def initialize(page)
-    @page = Nokogiri::HTML(page.read_html) # parse html
+    @page = page.read_html
   end
 
   private

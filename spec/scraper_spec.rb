@@ -8,7 +8,7 @@ require_relative '../lib/scraper'
 
 describe Scraper do
   let(:page_test) { Page.new('https://www.indeed.com/jobs?q=developer+remote&l=') }
-  let(:scraper_test) { Scraper.new(page_test)}
+  let(:scraper_test) { Scraper.new(page_test) }
   describe '#initialize' do
     it 'returns an argument error when no argument is given' do
       expect { Scraper.new }.to raise_error(ArgumentError)

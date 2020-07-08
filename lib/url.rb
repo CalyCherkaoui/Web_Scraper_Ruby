@@ -1,7 +1,7 @@
 class Url
   attr_accessor :key_request
 
-  def initialize( key_request = 'developer+remote')
+  def initialize(key_request = 'developer+remote')
     @key_request = key_request
   end
 
@@ -10,12 +10,9 @@ class Url
   end
 
   private
+
   def key_word_filter(key)
     key.downcase!
-    key = key.sub(' ', '+')
+    key.sub(' ', '+')
   end
-
 end
-
-# u = Url.new('Ruby')
-# p u.requested_url
