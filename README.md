@@ -1,6 +1,17 @@
 # Job offers Scraper
 This is a web scraper for It jobs offers web page.
 
+# About the project
+
+* The programme is implementing a scraper for search results of a Job offer website
+* The scraper allow you to display the scraped data in terminal of to export them into a CSV or a Text files
+
+## Learning objectives
+
+* Implement basics of the Object Oriented Programming
+* The use of Ruby's best practices
+* Project organisation and Git workflow
+
 ## Project Structure
 ```
 ├── README.md
@@ -15,11 +26,13 @@ This is a web scraper for It jobs offers web page.
     └── scraper_spec.rb
     └── spec_helper.rb
 ```
-## Get start
+## Get started
 
-[x] Clone this repository
-[] Install the gems by runing in command line `` bundle install ``
-[] In the terminal run `` ruby main.rb ``
+* Clone this repository to your local machine
+* Change directory to the project directory `` cd Web_Scraper_Ruby ``
+* Install the gems by runing the command line `` bundle install ``
+* In the terminal run `` ruby bin/main.rb ``
+* If you chose to export the outputs , you will find the csv and txt files in the project repository
 
 ## Built With
 
@@ -28,7 +41,8 @@ This is a web scraper for It jobs offers web page.
 - Linter : Rubocop
 
 ## Code testing
-  - Tool : Rspec
+
+- Tool : Rspec
 
 ## Author
 
@@ -55,3 +69,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
+
