@@ -6,7 +6,7 @@ class Page
 
   def read_html
     document = URI.parse(@url).open
-    raw_html = document.read # raw html
-    Nokogiri::HTML(raw_html) # parse html
+    raw_html = document.read
+    Nokogiri::HTML(raw_html)
   end
 end

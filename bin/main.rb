@@ -1,6 +1,4 @@
 require 'nokogiri'
-require 'byebug'
-require 'colorize'
 require 'open-uri'
 require 'csv'
 require_relative '../lib/interface.rb'

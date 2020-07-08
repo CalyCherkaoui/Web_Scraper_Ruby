@@ -2,7 +2,7 @@
 require_relative '../lib/interface'
 
 describe Interface do
-  let(:string_name) { 'houda' }
+  let(:string_name) { 'Houda' }
   let(:test_inerface) { Interface.new('houda') }
   after_option_msg_test = 'Houda! you can download the text exported file in the root folder'
 
