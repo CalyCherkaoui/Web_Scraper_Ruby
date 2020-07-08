@@ -2,7 +2,7 @@ class Interface
   attr_accessor :name
 
   def initialize(name = '')
-    @name = name
+    @name = name.capitalize
   end
 
   def authentify_msg
@@ -10,25 +10,35 @@ class Interface
   end
 
   def welcome_msg
+    '
+#################################################################################################
+###                                                                                           ###
+###                             Scraping Job offers data                                      ###
+###                             from Indeed.com web page                                      ###
+###                                                                                           ###
+###                                                                                           ###
+#################################################################################################
+'
+  end
+
+  def enter_key_words_msg
     "
-#################################################################################
-###                                                                           ###
-###                     Scraping Job offers data                              ###
-###                     from Indeed.com web page                              ###
-###                                                                           ###
-###                                                                           ###
-#################################################################################
+------------------------------------------------------------------------------------------------
+        Hi #{@name}! This scraper allow you to serch job offers by key words.
+
+              Please enter here a key word  for your job search ==>
+------------------------------------------------------------------------------------------------
 "
   end
 
   def chose_option_msg
     "
-                   -------------------------------------------
-                    Chose an option for scrapping:
+------------------------------------------------------------------------------------------------
+    Hi #{@name}! Please Chose an option for Displaying or Exporting your scrapping results:
                            Display on terminal, enter => 1
                            Download CSV file, enter   => 2
                            Download txt file, enter   => 3
-                   ------------------------------------------
+------------------------------------------------------------------------------------------------
 "
   end
 
