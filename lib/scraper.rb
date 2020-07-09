@@ -7,6 +7,16 @@ class Scraper
     @page = page.read_html
   end
 
+  def jobs_list
+    jobs = []
+    job_offers = @page.css('div.jobsearch-SerpJobCard')
+    job_offers.each do |entry|
+      job = job(entry)
+      jobs << job
+    end
+    jobs
+  end
+
   private
 
   def job(entry)
@@ -29,17 +39,5 @@ class Scraper
       output = output.delete_suffix('new')
       output
     end
-  end
-
-  public
-
-  def jobs_list
-    jobs = []
-    job_offers = @page.css('div.jobsearch-SerpJobCard')
-    job_offers.each do |entry|
-      job = job(entry)
-      jobs << job
-    end
-    jobs
   end
 end

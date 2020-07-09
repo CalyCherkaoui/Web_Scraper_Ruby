@@ -24,7 +24,7 @@ class Interface
   def enter_key_words_msg
     "
 ------------------------------------------------------------------------------------------------
-        Hi #{@name}! This scraper allow you to serch job offers by key words.
+        Hi #{@name}! This scraper allows you to serch job offers by key words.
 
               Please enter here a key word  for your job search ==>
 ------------------------------------------------------------------------------------------------
@@ -54,7 +54,7 @@ class Interface
     elsif option == 3
       "#{@name.capitalize}! you can download the text exported file in the root folder"
     else
-      'Wrong option try again'
+      'Wrong option! try again'
     end
   end
 end

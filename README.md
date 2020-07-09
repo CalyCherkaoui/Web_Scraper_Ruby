@@ -10,6 +10,7 @@ This is a web scraper for jobs offers web site <https://www.indeed.com> .
 - - Display the scraped data in terminal or to export them into a CSV or a Text files
 
 # Preview
+![Link to a video presentation of the project](https://www.loom.com/share/d5c1adf508c84325a34e4c4a116d4fb4)
 
 ![screenshot](./screen_shots/ScreenshotScraper.png)
 
@@ -50,7 +51,14 @@ This is a web scraper for jobs offers web site <https://www.indeed.com> .
 ```
 ## Get started
 
-* Clone this repository to your local machine
+* Clone this repository to your local machine by runing these comand on your local terminal
+```
+git clone https://github.com/CalyCherkaoui/Web_Scraper_Ruby.git
+cd Web_scraper_Ruby
+git checkout scraper
+code .
+
+```
 * Change directory to the project directory `` cd Web_Scraper_Ruby ``
 * Install the gems by runing the command line `` bundle install ``
 * In the terminal run `` ruby bin/main.rb ``
