@@ -12,7 +12,7 @@ This is a web scraper for jobs offers web site <https://www.indeed.com> .
 # Preview
 ![Link to a video presentation of the project](https://www.loom.com/share/d5c1adf508c84325a34e4c4a116d4fb4)
 
-![screenshot](./screen_shots/ScreenshotScraper.png)
+![screenshot](./screen_shots/Screenshot.png)
 
 ## Built With
 
